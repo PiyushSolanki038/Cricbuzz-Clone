@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Navigation styles */
+.MuiAppBar-root {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Match card styles */
+.MuiCard-root {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 8px !important;
+  border: 1px solid #e0e0e0;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Typography enhancements */
+.MuiTypography-root {
+  letter-spacing: 0.3px;
+}
+
+/* Button styles */
+.MuiButton-root {
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+
+/* Container padding */
+.MuiContainer-root {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
